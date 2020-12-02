@@ -18,7 +18,7 @@ alpha, beta = least_squares_fit(heights, masses)
 print (alpha, beta)
 
 #Based on the model function:
-# y = alpha + beta * x
+# y = alpha + beta * x + epsilon (epsilon = error. We assume it 0)
 #(which describes a line with slope beta and intercepts alpha in its y axis)
 
 #We can predict new Masses based on incoming new Heights. So if, based on the previous dataset, I receive:
@@ -30,7 +30,7 @@ new_mass = alpha + (beta * new_height)
 print(f"Linear regression with OLS: {new_mass}")
 
 
-#Same applies for gradient descent approach
+#Same applies for gradient descent approach, or, in other words, prediction based on minimizing the sum of squared errors
 alpha, beta = gradient_descent(heights, masses)
 print (alpha, beta)
 new_height = 1.72
