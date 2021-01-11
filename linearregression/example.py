@@ -25,7 +25,7 @@ print (alpha, beta)
 # height = 1,72
 # This function will be applied:
 # mass = 61,6746 + (-39,7468 * 1,72) =
-new_height = 1.72
+new_height = 1.59
 new_mass = alpha + (beta * new_height)
 print(f"Linear regression with OLS: {new_mass}")
 
@@ -33,6 +33,6 @@ print(f"Linear regression with OLS: {new_mass}")
 #Same applies for gradient descent approach, or, in other words, prediction based on minimizing the sum of squared errors
 alpha, beta = gradient_descent(heights, masses)
 print (alpha, beta)
-new_height = 1.72
+new_height = 1.59
 new_mass = alpha + (beta * new_height)
 print(f"Linear regression with Gradient Descent: {new_mass}")
